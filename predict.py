@@ -1,7 +1,6 @@
 # %%
 import requests
 import os
-from sklearn.metrics import accuracy_score
 from torch_geometric.data import Dataset
 import torch
 import pandas as pd
@@ -83,7 +82,6 @@ idx = [i for i in range(len(data.x))]
 real_full = data.y.resize_(len(data.x))
 real_labels = real_full.numpy()
 predicted_labels = pred_loaded.numpy()
-print(accuracy_score(real_labels, predicted_labels))
 
 results = pd.DataFrame(list(zip(idx, list(predicted_labels))), columns=['idx', 'prediction'])
 
