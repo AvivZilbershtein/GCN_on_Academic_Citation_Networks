@@ -1,1 +1,1 @@
-# GCN_on_Academic_Citation_Networks
+# GCN_on_Academic_Citation_Networks- HW assignment
